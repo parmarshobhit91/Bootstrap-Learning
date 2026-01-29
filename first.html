@@ -14,8 +14,44 @@
     <div class="container">
         <div class="row">Row 1</div>
         <div class="row">Row 2</div>
-        <div class="row">Row 3</div>
+        <div class="row">
+            <!-- How to add columns inside a row -->
+            <div class="col">Col 1</div>
+            <div class="col">Col 2</div>
+            <div class="w-100"></div> <!-- This is break, it separates the insided divs -->
+            <div class="col">Col 3</div>
+            <div class="w-100"></div>
+            <div class="col">Col 4</div>
+            <div class="col">Col 5</div>
+            <div class="col">Col 6</div>
+            <div class="w-100"></div>
+            <div class="col">Col 7</div>
+            <div class="col">Col 8</div>
+        </div>
         <div class="row">Row 4</div>
+        <!-- How to give automatic break i.e. if we want to have only two columns in a row
+         and next 2 in next row and so on -->
+        <div class="row row-cols-2">
+            <div class="col">Col 1</div>
+            <div class="col">Col 2</div>
+            <div class="col">Col 3</div>
+            <div class="col">Col 4</div>
+            <div class="col">Col 5</div>
+            <div class="col">Col 6</div>
+        </div>
+
+        <!-- Advance col class -->
+        <!-- col class for break points -->
+         <div class="row">
+            <!-- Here what will happen is while the size of 
+             screen reduces to less than md i.e. 768px 
+             the below 3 divs col1, col2, col3 will take 
+             100% width and each will come in a new line -->
+            <div class="col-md">Col 1</div>
+            <div class="col-md">Col 2</div>
+            <div class="col-md">Col 3</div>
+        </div>
+
     </div>
 </body>
 </html>

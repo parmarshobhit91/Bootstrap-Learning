@@ -4,6 +4,9 @@
 .row {
     border: 5px solid red;
 }
+.col {
+    border: 5px solid green;
+}
 .container-fluid {
     border: 8px solid black;
 }
